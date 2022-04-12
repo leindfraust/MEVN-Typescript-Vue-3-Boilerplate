@@ -34,3 +34,6 @@ Development server
 Production server 
 
 ``` npm run start ```
+
+# License
+See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
