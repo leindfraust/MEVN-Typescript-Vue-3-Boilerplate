@@ -1,7 +1,13 @@
 # A boilerplate of latest MEVN technologies
-The Vue 3 uses Naive UI for the components, see [Naive UI](https://www.naiveui.com/en-US/os-theme/docs/introduction).
+This uses Naive UI for the components, see [Naive UI](https://www.naiveui.com/en-US/os-theme/docs/introduction).
 Code structure is designed for publishing it to Heroku. You must specify your own .env file to connect to your MongoDB database. 
 
+Installed CLI Plugins
+- Babel
+- PWA
+- Router
+- Vuex
+- Typescript
 
 # Get Started
 
