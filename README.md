@@ -1,6 +1,6 @@
 # A boilerplate of latest MEVN technologies
 This uses Naive UI for the components, see [Naive UI](https://www.naiveui.com/en-US/os-theme/docs/introduction).
-Code structure is designed for publishing it to Heroku. You must specify your own .env file to connect to your MongoDB database. 
+Folder structure is designed for publishing it to Heroku. You must specify your own .env file to connect to your MongoDB database. 
 
 Installed CLI Plugins
 - Babel
