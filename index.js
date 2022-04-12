@@ -26,7 +26,7 @@ let corsOptionsDelegate = function (req, callback) {
 }
 
 //express usages
-app.use(morgan('tinay'))
+app.use(morgan('tiny'))
 app.use(express.json())
 app.use(history())
 app.use(cors(corsOptionsDelegate))
