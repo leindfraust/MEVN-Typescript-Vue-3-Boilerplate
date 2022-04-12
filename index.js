@@ -30,6 +30,7 @@ app.use(morgan('tinay'))
 app.use(express.json())
 app.use(history())
 app.use(cors(corsOptionsDelegate))
+app.use(express.static(path.join(__dirname, 'client/dist')))
 
 //connect to MongoDB
 const dbConnect = async () => {
@@ -44,4 +45,11 @@ dbConnect().then(() => console.log('MongoDB online')).catch((err) => console.log
 //listen server
 app.listen(PORT, () => {
     console.log(`listening to port ${PORT}`)
+});
+
+//serving for production
+app.get('/', (req, res) => {
+
+    res.sendFile(path.join(__dirname, 'client/dist/index.html'))
+
 });
