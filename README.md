@@ -2,11 +2,12 @@
 This uses Naive UI for the components, see [Naive UI](https://www.naiveui.com/en-US/os-theme/docs/introduction).
 Folder structure is designed for publishing it to Heroku. You must specify your own .env file to connect to your MongoDB database. 
 
-Installed CLI Plugins
+Installed Plugins
 - Babel
-- PWA
 - Router
-- Vuex
+- Pinia
+- Vue Axios
+- Bulma
 - Typescript
 
 # Get Started
