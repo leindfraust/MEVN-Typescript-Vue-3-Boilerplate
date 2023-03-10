@@ -1,6 +1,4 @@
-const {
-  defineConfig
-} = require('@vue/cli-service')
+const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
   configureWebpack: {
@@ -10,6 +8,6 @@ module.exports = defineConfig({
           target: 'http://localhost:5000',
         },
       },
-    },
-  },
+    }
+  }
 })
