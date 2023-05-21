@@ -9,7 +9,7 @@ Installed Plugins
 - Bulma
 - Typescript
 
-# Get Started
+## Get Started
 
 Install dependencies
 
@@ -21,7 +21,7 @@ client
 
 ``` cd client && npm install ```
 
-# Command Scripts
+## Command Scripts
 Run only in the root folder
 
 
@@ -41,5 +41,5 @@ Production server
 
 ``` npm run start ```
 
-# License
+## License
 See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
