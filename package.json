@@ -1,26 +1,29 @@
 {
   "name": "mevn-boilerplate-typescript-vue3",
   "version": "1.0.0",
+  "type": "module",
   "description": "a boilerplate of mevn stack, made for releasing in heroku",
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js --ignore 'client/",
     "client": "npm run serve --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "render": "npm install --omit=dev && cd client && npm install",
     "start": "node index.js"
   },
   "author": "Romel Jr Zerna",
   "license": "MIT",
   "dependencies": {
-    "concurrently": "^7.6.0",
+    "concurrently": "^8.2.0",
     "connect-history-api-fallback": "^2.0.0",
     "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "mongoose": "^7.0.1",
+    "helmet": "^7.0.0",
+    "mongoose": "^7.4.3",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.21"
+    "nodemon": "^3.0.1"
   }
 }
