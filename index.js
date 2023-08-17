@@ -1,12 +1,15 @@
-require('dotenv').config()
-const express = require('express')
+import 'dotenv/config'
+import express from 'express'
+import helmet from 'helmet'
+import morgan from 'morgan'
+import cors from 'cors'
+import history from 'connect-history-api-fallback'
+import mongoose from 'mongoose'
+import { fileURLToPath } from 'url';
+import path, { dirname } from 'path'
+
 const app = express()
-const morgan = require('morgan')
-const cors = require('cors');
-const history = require('connect-history-api-fallback')
-const mongoose = require('mongoose')
 const PORT = process.env.PORT || 5000
-const path = require('path')
 
 
 //cors options
@@ -25,11 +28,17 @@ let corsOptionsDelegate = function (req, callback) {
     callback(null, corsOptions) // callback expects two parameters: error and options
 }
 
-//express usages
-app.use(morgan('tiny'))
+//middlewares
 app.use(express.json())
+app.use(helmet())
+app.use(morgan('tiny'))
 app.use(history())
 app.use(cors(corsOptionsDelegate))
+
+//fix __dirname and __filename not defined in ES module scope
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename)
+
 app.use(express.static(path.join(__dirname, 'client/dist')))
 
 //connect to MongoDB
