@@ -11,11 +11,7 @@ This is a boilerplate for a full stack development leveraging the following tech
 - Bulma
 - Typescript
 
-<<<<<<< Updated upstream
-## Get Started
-=======
 PS: This uses Webpack not Vite.
->>>>>>> Stashed changes
 
 ### Node.js
 
@@ -39,12 +35,7 @@ PS: Node.js will be using ES Module or "type": "module"
 
 ``` cd client && npm install ```
 
-<<<<<<< Updated upstream
 ## Command Scripts
-Run only in the root folder
-=======
-## Commands
->>>>>>> Stashed changes
 
 ### Root Directory
 
@@ -66,9 +57,6 @@ Run only in the root folder
 
 ``` npm run start ```
 
-<<<<<<< Updated upstream
-## License
-=======
 #### Render deployment
 
 ``` npm run render ```
@@ -91,5 +79,4 @@ Run only in the root folder
 
 ## License
 
->>>>>>> Stashed changes
 See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
